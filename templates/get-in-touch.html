@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <section class="home">
+    <video class="video_slide active" src="{{url_for ('static', filename='videos/video_12.mp4')}}" autoplay muted loop></video>
+
+    <div class="content active">
+      <h1 data-aos="zoom-in" data-aos-duration="3000">Get In.<br><span>Touch</span></h1>
+      <p data-aos="zoom-in" data-aos-duration="3000">With a combined Cloud DevOps experience of over fifty years (50 yrs) made up of a strong team of multinationals, having an understanding of various clients on a global scale. Devtegrate prides itself in the provision of satisfactory professional service, with a well established record.</p>
+
+      <div class="subscription_section" data-aos="zoom-in" data-aos-duration="3000">
+        <h2>Lets contact you via Email</h2>
+        <p>Get up to date news, Information and upcoming events from Dev<span>te</span>grate</p>
+        <div class="col-md-12">
+          <div class="subscription_input">
+            <form action=" {{ url_for('contact') }} ">
+              <input type="email" name="email" placeholder="Type in Your Email Address">
+              <button onclick="popUpMessage()"><i class="fa fa-envelope" type="submit" name="submit" aria-hidden="true"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media_icons">
+      <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.facebook.com/profile.php?id=100087533002431"><i class="bx bxl-facebook"></i></a>
+      <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.instagram.com/devtegrate_llc"><i class="bx bxl-instagram"></i></a>
+      <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.twitter.com/Devtegrate_LLC"><i class="bx bxl-twitter"></i></a>
+    </div>
+
+    <div data-aos="zoom-in" data-aos-duration="3000" class="slider_navigation">
+      <a class="nav_arrow" href="{{ url_for('team') }}"><i style="color: #35A6FF" class='bx bx-chevrons-left'></i></a>
+      <a class="nav_text" href="{{ url_for('team') }}">Previous Page</a>
+      <a class="nav_btn active" href=""></a>
+      <a class="nav_arrow" href=""><i style="color: #ffffff" class='bx bx-chevrons-right bx-flashing'></i></a>
+    </div>
+  </section>
+
+  <div class="consult">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="consult_background">
+          <div class="consult_background_header">
+            <div class="consult_background_content">
+              <h3>Devtegrate Cloud Service </h3>
+              <p>DevOps. Cloud Service. Automation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="consult_form">
+          <div class="consult_form_header">
+            <h3>Consult With Us</h3>
+            <p>DevOps. Cloud Service. Automation</p>
+          </div>
+
+          <form onsubmit="sendEmail(); reset(); return false"
+            action="https://calendly.com/devtegrate/devtegrate-consult">
+            <input type="text" name='name' placeholder="What is your Name">
+            <input type="text" name='company' placeholder="What is your Company's Name">
+            <input type="email" name='email' placeholder="Email Address Here !">
+
+            <textarea id='message' placeholder="What can we do for you?" required></textarea>
+
+            <button type='submit'>Send <i class="bx bxl-telegram"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
