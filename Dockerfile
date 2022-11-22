@@ -1,11 +1,11 @@
-FROM python:3.8-slim-buster
+FROM python:3.11-alpine
 
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
+COPY . /app
 
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
-COPY . .
+EXPOSE 5000
 
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
