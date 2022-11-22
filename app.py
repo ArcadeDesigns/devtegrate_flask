@@ -63,15 +63,15 @@ def gcp():
 @app.route("/integration", methods=['GET', 'POST'])
 def integration():
 
-	name = request.form.get("name")
-	company = request.form.get("company")
-	email = request.form.get("email")
-	message = request.form.get("message")
+	#name = request.form.get("name")
+	#company = request.form.get("company")
+	#email = request.form.get("email")
+	#message = request.form.get("message")
 
-	server = smtplib.SMTP("smtp.office365.com", 587)
-	server.starttls()
-	server.login('contact@devtegrate.com', 'Welcome2022@@eva')
-	server.sendmail("michael@devtegrate.com", name, company, email, message)
+	#server = smtplib.SMTP("smtp.office365.com", 587)
+	#server.starttls()
+	#server.login('contact@devtegrate.com', 'Welcome2022@@eva')
+	#server.sendmail("michael@devtegrate.com", name, company, email, message)
 
 	return render_template("integration.html")
 

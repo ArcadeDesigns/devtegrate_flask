@@ -91,7 +91,7 @@
       {% include "navbar.html" %}
 
       <section class="home">
-        <video class="video_slide active" src="{{url_for ('static', filename='videos/video_2.mp')}}" autoplay muted loop></video>
+        <video class="video_slide active" src="{{url_for ('static', filename='videos/video_2.mp4')}}" autoplay muted loop></video>
         
         <div class="content active">
           <h1 data-aos="zoom-in" data-aos-duration="3000">Devtegrate Cloud Expert.<br><span>Software Life Cycle</span></h1>
@@ -111,7 +111,7 @@
       <div class="integration_container">
         <div class="integration_container_flex">
           <div data-aos="zoom-in" data-aos-duration="3000" class="integration_img">
-            <img src="assets/images/devtegrate_image_6.jpg" alt="Devtegrate DevOps">
+            <img src="{{url_for ('static', filename='images/devtegrate_image_6.jpg')}}" alt="Devtegrate DevOps">
           </div>
 
           <div class="integration_content">
@@ -255,8 +255,10 @@
           <div class="col-md-6">
             <div class="consult_background">
               <div class="consult_background_header">
-                <h3>Devtegrate Cloud Service </h3>
-                <p>DevOps. Cloud Service. Automation.</p>
+                <div class="consult_background_content">
+                  <h3>Devtegrate Cloud Service </h3>
+                  <p>DevOps. Cloud Service. Automation.</p>
+                </div>
               </div>
             </div>
           </div>
