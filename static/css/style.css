@@ -3200,7 +3200,7 @@ div.line-footer {
 }
 
 .introduction_box{
-    margin: 10px 5%;
+    margin: 10px 2%;
     width: 100%;
     height: auto;
     display: flex;
@@ -3221,7 +3221,7 @@ div.line-footer {
 }
 
 .section_title{
-    margin: 10px;
+    margin: 5px;
 }
 
 .section_title h2{
