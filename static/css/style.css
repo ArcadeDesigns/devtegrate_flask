@@ -3144,12 +3144,12 @@ div.line-footer {
 .introduction{
     justify-content: center;
     align-items: center;
-    margin: 5% 5% 10% 5%;
+    margin: 5% 3% 10% 3%;
 }
 
 .introduction_img{
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 5%;
     padding: 5%;
     border-radius: 8px;
     width: 80%;
