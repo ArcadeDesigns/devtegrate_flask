@@ -3235,7 +3235,7 @@ div.line-footer {
 .section_title p{
     text-align: left;
     color: var(--text_color);
-    font-size: 1em;
+    font-size: 0.85em;
     font-weight: 400;
 }
 
