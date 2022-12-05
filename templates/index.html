@@ -1,198 +1,225 @@
-{% extends 'base.html' %} 
-  {% block content %}
-    <section class="home">
-      <video class="video_slide active" src="https://devtegrate-files.s3.us-east-2.amazonaws.com/videos/video_10.mp4" autoplay muted loop></video>
-        
-        <div class="content active">
-          <h1 data-aos="zoom-in" data-aos-duration="3000">DevOps &.<br><span>Cloud Services</span></h1>
-          <p data-aos="zoom-in" data-aos-duration="3000">
-            Devtegrate believes there is the earnest need for developmental technology, cloud server integration and automation of web applications and softwares. Ensuring smooth and efficient cloud server integration during software develomental life cycle.
-          </p>
-          <a data-aos="zoom-in" data-aos-duration="3000" href="{{url_for('explore')}}">Explore</a>
+{% extends 'base.html' %}
+{% block content %}
+<section class="home">
+  <video class="video_slide active" src="https://devtegrate-files.s3.us-east-2.amazonaws.com/videos/video_10.mp4"
+    autoplay muted loop></video>
 
-          <div data-aos="zoom-in" data-aos-duration="3000" class="explore_container_header">
-            <span style="font-size: 0.8em; padding: 10px 0 0 0; ">Expert Service.&nbsp;&nbsp;&nbsp;&nbsp;Satisfied Clients.</span>
-          </div>
+  <div class="content active">
+    <h1 data-aos="zoom-in" data-aos-duration="3000">DevOps &<br><span>Cloud Services</span></h1>
+    <p data-aos="zoom-in" data-aos-duration="3000">
+      Recent years have presented the world with unprecedented challenges. These same challenges have driven us to craft
+      a pattern of development and deployment to keep up with the changing tides of the technological sphere. Ensuring
+      smooth and efficient cloud service delivery.
+    </p>
+    <a data-aos="zoom-in" data-aos-duration="3000" href="{{url_for('explore')}}">Explore</a>
 
-          <div data-aos="zoom-in" data-aos-duration="3000" class="header_image_client">
-            <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/nba.png" alt="Devtegrate DevOps">
-            <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/disney.png" alt="Devtegrate DevOps">
-            <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/autostore.png" alt="Devtegrate DevOps">
-            <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/microsoft.png" alt="Devtegrate DevOps">
-            <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/aws.png" alt="Devtegrate DevOps">
-            <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/hardrock.png" alt="Devtegrate DevOps">
-          </div>
-        </div>
+    <div data-aos="zoom-in" data-aos-duration="3000" class="explore_container_header">
+      <span style="font-size: 0.8em; padding: 10px 0 0 0; ">Our expert service and satisfied clients.</span>
+    </div>
 
-        <div class="media_icons">
-          <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.facebook.com/profile.php?id=100087533002431"><i class="bx bxl-facebook"></i></a>
+    <div data-aos="zoom-in" data-aos-duration="3000" class="header_image_client">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/nba.png" alt="Devtegrate DevOps">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/disney.png" alt="Devtegrate DevOps">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/autostore.png" alt="Devtegrate DevOps">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/microsoft.png" alt="Devtegrate DevOps">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/aws.png" alt="Devtegrate DevOps">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/hardrock.png" alt="Devtegrate DevOps">
+    </div>
+  </div>
 
-          <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.instagram.com/devtegrate_llc"><i class="bx bxl-instagram"></i></a>
+  <div class="media_icons">
+    <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.facebook.com/profile.php?id=100087533002431"><i
+        class="bx bxl-facebook"></i></a>
 
-          <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.twitter.com/Devtegrate_LLC"><i class="bx bxl-twitter"></i></a>
-        </div>
+    <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.instagram.com/devtegrate_llc"><i
+        class="bx bxl-instagram"></i></a>
 
-        <div data-aos="zoom-in" data-aos-duration="3000" class="slider_navigation">
-          <a class="nav_arrow" href=""><i style="color: #35A6FF" class='bx bx-chevrons-left'></i></a>
-          <a class="nav_btn active" href=""></a>
-          <a class="nav_text" href="{{ url_for ('team') }}">Next Page</a>
-          <a class="nav_arrow" href="{{ url_for ('team') }}"><i style="color: #ffffff" class='bx bx-chevrons-right bx-flashing'></i></a>
-        </div>
-      </section>
+    <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.twitter.com/Devtegrate_LLC"><i
+        class="bx bxl-twitter"></i></a>
+  </div>
 
-      <div class="introduction">
-        <div data-aos="zoom-in" data-aos-duration="3000" class="introduction_content">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="introduction_img">
-                <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/devtegrate_image.jpg" alt="Devtegrate DevOps">
-              </div>
-            </div>
+  <div data-aos="zoom-in" data-aos-duration="3000" class="slider_navigation">
+    <a class="nav_arrow" href=""><i style="color: #35A6FF" class='bx bx-chevrons-left'></i></a>
+    <a class="nav_btn active" href=""></a>
+    <a class="nav_text" href="{{ url_for ('team') }}">Next Page</a>
+    <a class="nav_arrow" href="{{ url_for ('team') }}"><i style="color: #ffffff"
+        class='bx bx-chevrons-right bx-flashing'></i></a>
+  </div>
+</section>
 
-            <div class="col-md-6">
-              <div class="section_title">
-                <h2>We solve, integrate and automate.</h2>
-                <p>Devtegrate leads the market from a strong fundamental point of view boasting of technical competence and multi-directional technical service.</p>
-              </div>
-
-               <div class="row">
-                  <div data-aos="zoom-in-left" data-aos-duration="3000" class="col-md-6">
-                    <div class="introduction_box">
-                      <i class='bx bx-water'></i>
-                      <div class="introduction_box_flex">
-                        <h3>Swift Service Delivery</h3>
-                        <p>Swift and efficient service delivery is a vital core value.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div data-aos="zoom-in-right" data-aos-duration="3000" class="col-md-6">
-                    <div class="introduction_box">
-                      <i class='bx bxl-aws' style='color:#f1c109'></i>
-                      <div class="introduction_box_flex">
-                        <h3 style='color:#f1c109'>Professionals at What We Do</h3>
-                        <p>Competency is not an option, but a mandate in service delivery.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div data-aos="zoom-in-left" data-aos-duration="3000" class="col-md-6">
-                    <div class="introduction_box">
-                      <i class='bx bxs-conversation' style='color:#288e0e'></i>
-                      <div class="introduction_box_flex">
-                        <h3 style='color:#288e0e'>Efficient Customer Service</h3>
-                        <p>Effective customer service, with customer satisfaction guaranteed.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div data-aos="zoom-in-right" data-aos-duration="3000" class="col-md-6">
-                    <div class="introduction_box">
-                      <i class='bx bx-cloud' style='color:#4ae4b5'></i>
-                      <div class="introduction_box_flex">
-                        <h3 style='color:#4ae4b5'>Cloud Service and Automation</h3>
-                        <p>DevOps. Cloud Service. Automation. Software Developmental Lifecycle</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="hidden_section">
-                    <i class='bx bx-mail-send'></i>
-                    <p>
-                      Made up of a professional team of expert DevOps engineers ready to receive, develop, automate, integrate and deploy your applications, ensuring scalability, site reliability and uptime, as well as a perfect structure setup. At Devterate, we pride ourselves in the ability to develop a scalable virtual environment and integrate with it sealessly, while interacting with its components and containers housing its application.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+<div class="introduction">
+  <div data-aos="zoom-in" data-aos-duration="3000" class="introduction_content">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="introduction_img">
+          <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/devtegrate_image.jpg"
+            alt="Devtegrate DevOps">
         </div>
       </div>
 
-      <!-- Calendly badge widget begin -->
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-        <script type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'calendly-form', text: 'Get In touch with Devtegrate.', color: '#35A6FF', textColor: '#ffffff' }); }</script>
-      <!-- Calendly badge widget end -->
-
-      <section class="carousel">
-        <div data-aos="zoom-in" data-aos-duration="3000" class="explore_container_header">
-          <span style="font-size: 0.8em">Azure Cloud Service.&nbsp;&nbsp;&nbsp;&nbsp;Amazon Web
-            Service.&nbsp;&nbsp;&nbsp;&nbsp;Google Cloud platform.</span>
-          <h2 style='color:#35A6FF'>View our expert skill set and professional choice of tools for service delivery.</h2>
+      <div class="col-md-6">
+        <div class="section_title">
+          <h2>We solve, integrate and automate.</h2>
+          <p>Setting up a robust cloud infrastructure or improving an existing cloud environment can pose series of
+            unprecedented challenges, cloud consulting is usually the endpoint for organization’s found in this
+            situation. Devtegrate leads the market from a strong fundamental point of view boasting of technical
+            competence, equipped with the right tools and skills to solve, integrate and automate various cloud
+            infrastructure and environments.</p>
         </div>
 
         <div class="row">
-          <div class="col-md-4">
-            <div class="carousel_box" data-aos="zoom-out" data-aos-duration="3000">
-              <i class='bx bxl-microsoft bx-burst'></i>
-              <a href="{{ url_for ('azure') }}">Microsoft Azure</a>
-            </div>
-          </div>
-
-          <div class="col-md-4" data-aos="zoom-out" data-aos-duration="3000">
-            <div class="carousel_box">
-              <i class='bx bxl-amazon bx-tada'></i>
-              <a href="{{ url_for ('aws') }}">Amazon Cloud Service</a>
-            </div>
-          </div>
-
-          <div class="col-md-4" data-aos="zoom-out" data-aos-duration="3000">
-            <div class="carousel_box">
-              <i class='bx bxl-google-cloud bx-fade-up'></i>
-              <a href="{{ url_for ('gcp') }}">Google Cloud Platform</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="mission_container">
-        <div class="mission_content_header">
-          <span>Our Mission. Our Vision.</span>
-          <h2>The use of cloud services and tools towards technological advancement has witnessed a massive boost as a result making life easier.</h2>
-        </div>
-
-        <div class="mission_section">
-          <div class="mission_content">
-            <div class="mission_content_flex">
-              <div data-aos="zoom-in" data-aos-duration="3000" class="mission_content_box">
-                <i class='bx bx-desktop'></i>
-                <div class="mission_content_box_text">
-                  <h3>Create the perfect project structure</h3>
-                  <p>With more focus on object oriented programming and infrastructure as code, creating the perfect set up for software’s and integrating its virtual environment during the developmental life cycle has become easier.</p>
-                </div>
-              </div>
-
-              <div data-aos="zoom-in" data-aos-duration="3000" class="mission_content_box">
-                <i class='bx bxs-data'></i>
-                <div class="mission_content_box_text">
-                  <h3>Version control and scalability</h3>
-                  <p>Monitoring various software data structure and the progress of code with the integration of a virtual environment during the software developmental lifecycle, comes with the assurance of scalability and version control for ease of use.</p>
-                </div>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="3000" class="mission_content_box">
-                <i class='bx bx-cube-alt'></i>
-                <div class="mission_content_box_text">
-                  <h3>Accelerated app production process</h3>
-                  <p>After creating a perfect project structure and integrating the structure to a virtual environment, strict review before deployment is necessitated by the need to create a flawless network of inter-connected software components for the assurance of speed during software development lifecycle.</p>
-                </div>
-              </div>
-
-              <div data-aos="zoom-in" data-aos-duration="3000" class="mission_content_box">
-                <i class='bx bx-happy'></i>
-                <div class="mission_content_box_text">
-                  <h3>Successful deployment</h3>
-                  <p>Observing every step along the way, ranging from version control and scalability to accelerated app production process, the aim is to develop and deploy perfect softwares to meet every client requirements.</p>
-                </div>
+          <div data-aos="zoom-in-left" data-aos-duration="3000" class="col-md-6">
+            <div class="introduction_box">
+              <i class='bx bx-water'></i>
+              <div class="introduction_box_flex">
+                <h3>Swift Service Delivery</h3>
+                <p>Our strategy is to identify existing cloud infrastructure defect, then design and develop a pragmatic cloud infrastructure.</p>
               </div>
             </div>
           </div>
 
-          <div class="mission_section_box">
-            <div class="mission_img">
-              <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/devtegrate_image_2.jpg" alt="Devtegrate DevOps">
+          <div data-aos="zoom-in-right" data-aos-duration="3000" class="col-md-6">
+            <div class="introduction_box">
+              <i class='bx bxl-aws' style='color:#f1c109'></i>
+              <div class="introduction_box_flex">
+                <h3 style='color:#f1c109'>Professionals at What We Do</h3>
+                <p>With the right cloud tool, the right cloud infrastructure can be developed.</p>
+              </div>
             </div>
+          </div>
+
+          <div data-aos="zoom-in-left" data-aos-duration="3000" class="col-md-6">
+            <div class="introduction_box">
+              <i class='bx bxs-conversation' style='color:#288e0e'></i>
+              <div class="introduction_box_flex">
+                <h3 style='color:#288e0e'>Efficient Customer Service</h3>
+                <p>Connecting programmers and developers of various backgrounds to one seamless cloud environment to contribute and effective develop.</p>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in-right" data-aos-duration="3000" class="col-md-6">
+            <div class="introduction_box">
+              <i class='bx bx-cloud' style='color:#4ae4b5'></i>
+              <div class="introduction_box_flex">
+                <h3 style='color:#4ae4b5'>Cloud Service and Automation</h3>
+                <p>DevOps. Cloud Service. Automation. Software Developmental Lifecycle</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden_section">
+            <i class='bx bx-mail-send'></i>
+            <p>
+              Made up of a professional team of expert DevOps engineers ready to receive, develop, automate, integrate
+              and deploy your applications, ensuring scalability, site reliability and uptime, as well as a perfect
+              structure setup. At Devterate, we pride ourselves in the ability to develop a scalable virtual environment
+              and integrate with it sealessly, while interacting with its components and containers housing its
+              application.
+            </p>
           </div>
         </div>
       </div>
-  {% endblock %}
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script
+  type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'calendly-form', text: 'Get In touch with Devtegrate.', color: '#35A6FF', textColor: '#ffffff' }); }</script>
+<!-- Calendly badge widget end -->
+
+<section class="carousel">
+  <div data-aos="zoom-in" data-aos-duration="3000" class="explore_container_header">
+    <span style="font-size: 0.8em">Azure Cloud Service.&nbsp;&nbsp;&nbsp;&nbsp;Amazon Web
+      Service.&nbsp;&nbsp;&nbsp;&nbsp;Google Cloud platform.</span>
+    <h2 style='color:#35A6FF'>View our expert skill set and professional choice of tools for service delivery.</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="carousel_box" data-aos="zoom-out" data-aos-duration="3000">
+        <i class='bx bxl-microsoft bx-burst'></i>
+        <a href="{{ url_for ('azure') }}">Microsoft Azure</a>
+      </div>
+    </div>
+
+    <div class="col-md-4" data-aos="zoom-out" data-aos-duration="3000">
+      <div class="carousel_box">
+        <i class='bx bxl-amazon bx-tada'></i>
+        <a href="{{ url_for ('aws') }}">Amazon Cloud Service</a>
+      </div>
+    </div>
+
+    <div class="col-md-4" data-aos="zoom-out" data-aos-duration="3000">
+      <div class="carousel_box">
+        <i class='bx bxl-google-cloud bx-fade-up'></i>
+        <a href="{{ url_for ('gcp') }}">Google Cloud Platform</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mission_container">
+  <div class="mission_content_header">
+    <span>Our Mission. Our Vision.</span>
+    <h2>The use of cloud services and tools towards technological advancement has witnessed a massive boost as a result
+      making life easier.</h2>
+  </div>
+
+  <div class="mission_section">
+    <div class="mission_content">
+      <div class="mission_content_flex">
+        <div data-aos="zoom-in" data-aos-duration="3000" class="mission_content_box">
+          <i class='bx bx-desktop'></i>
+          <div class="mission_content_box_text">
+            <h3>Create the perfect project structure</h3>
+            <p>With more focus on object oriented programming and infrastructure as code, creating the perfect set up
+              for software’s and integrating its virtual environment during the developmental life cycle has become
+              easier.</p>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in" data-aos-duration="3000" class="mission_content_box">
+          <i class='bx bxs-data'></i>
+          <div class="mission_content_box_text">
+            <h3>Version control and scalability</h3>
+            <p>Monitoring various software data structure and the progress of code with the integration of a virtual
+              environment during the software developmental lifecycle, comes with the assurance of scalability and
+              version control for ease of use.</p>
+          </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="3000" class="mission_content_box">
+          <i class='bx bx-cube-alt'></i>
+          <div class="mission_content_box_text">
+            <h3>Accelerated app production process</h3>
+            <p>After creating a perfect project structure and integrating the structure to a virtual environment, strict
+              review before deployment is necessitated by the need to create a flawless network of inter-connected
+              software components for the assurance of speed during software development lifecycle.</p>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in" data-aos-duration="3000" class="mission_content_box">
+          <i class='bx bx-happy'></i>
+          <div class="mission_content_box_text">
+            <h3>Successful deployment</h3>
+            <p>Observing every step along the way, ranging from version control and scalability to accelerated app
+              production process, the aim is to develop and deploy perfect softwares to meet every client requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission_section_box">
+      <div class="mission_img">
+        <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/devtegrate_image_2.jpg"
+          alt="Devtegrate DevOps">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
