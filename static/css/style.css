@@ -2719,15 +2719,15 @@ section{
 }
 
 .mission_content_header{
-    width: 70%;
+    width: 80%;
 }
 
 .mission_content_header h2{
     text-align: left;
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin-bottom: 5%;
     color: var(--header_color);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .mission_content_header span{
