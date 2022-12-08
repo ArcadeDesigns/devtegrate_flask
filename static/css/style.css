@@ -2566,7 +2566,7 @@ section{
 
 .career_container h2{
     font-size: 1.4em;
-    color: var(--secondary_color);
+    color: var(--primary_color);
     padding-bottom: 15px;
 }
 
@@ -2787,6 +2787,12 @@ section{
     font-weight: 400;
     font-size: 0.8em;
     color: var(--text_color);   
+}
+
+.mission_content_box span{
+    font-size: 0.65em;
+    color: var(--text_color);
+    font-weight: 400;
 }
 
 .mission_section_box{
