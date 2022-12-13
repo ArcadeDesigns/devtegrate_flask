@@ -284,8 +284,92 @@
           </div>
         </div>
       </div>
-      
-      {% include "faq.html" %}
+
+      <div class="content__container">
+        <div class="class__header__lg">
+          <h4>Why you should work with Devtegrate as your cloud service partner</h4>
+          <p>Devtegrate is a cloud service provider that offers a wide range of solutions and services for businesses and organizations. One of the key reasons to work with Devtegrate is their expertise and experience in cloud computing. Devtegrate has a team of certified professionals who have extensive knowledge and experience with cloud technologies and best practices. This expertise can be invaluable for organizations that are new to cloud computing or looking to improve their existing cloud operations.</p>
+        </div>
+
+        <div class="info__box">
+          <div class="class__info__header">
+            <div class="swiper__slider__navigation_2">
+              <div class="slider__nav__menu_2 active">Expertise and Experience</div>
+              <div class="slider__nav__menu_2">Certified Cloud Professionals</div>
+              <div class="slider__nav__menu_2">Reliability and Efficiency</div>
+              <div class="slider__nav__menu_2">Innovative Assessments</div>
+            </div>
+
+            <div class="swiper__slider__header__flex_2 active">
+              <div class="swiper__slider__header__flex__content_2">
+                <div class="info__text__header_2">
+                  <span>Our services speaks for us.</span>
+                  <h3>Expertise and Experience.</h3>
+                </div>
+
+                <div class="info__text__content_2">
+                  <p>Cloud expertise typically involves knowledge of cloud architecture, deployment models, and the various services and technologies offered by cloud providers. This can include understanding of infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and software-as-a-service (SaaS) offerings, as well as knowledge of specific cloud platforms such as Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform which we know all too well and utilize daily in a bid to render professional services to our clients.</p>
+                </div>
+              </div>
+
+              <div class="swiper__slider__header__flex__img_2">
+                <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/devtegrate__1.png" alt="Devtegrate DevOps">
+              </div>
+            </div>
+
+            <div class="swiper__slider__header__flex_2">
+              <div class="swiper__slider__header__flex__content_2">
+                <div class="info__text__header_2">
+                  <span>Our services speaks for us.</span>
+                  <h3>Certified Cloud Professionals.</h3>
+                </div>
+
+                <div class="info__text__content_2">
+                  <p>We garner a large crop of “Certified Cloud Professionals”; individuals who have demonstrated their knowledge and expertise in cloud computing technologies by earning a professional certification. Our cloud professionals boast of certifications in AWS Certified Solutions Architect, Microsoft Azure Certified Solutions Architect, Google Cloud Certified Professional Cloud Architect, CompTIA Cloud+, Certified Cloud Security Professional (CCSP) and are well vast in the use of various cloud DevOps tools.</p>
+                </div>
+              </div>
+
+              <div class="swiper__slider__header__flex__img_2">
+                <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/devtegrate__3.png" alt="Devtegrate DevOps">
+              </div>
+            </div>
+
+            <div class="swiper__slider__header__flex_2">
+              <div class="swiper__slider__header__flex__content_2">
+                <div class="info__text__header_2">
+                  <span>Our services speaks for us.</span>
+                  <h3>Reliability and Efficiency.</h3>
+                </div>
+
+                <div class="info__text__content_2">
+                  <p>Cloud service reliability and efficiency are important considerations for any organization that uses cloud computing technologies. A reliable cloud service is essential for businesses and organizations that rely on cloud computing for mission-critical operations. This could include storing and accessing important data, running applications and services, or providing access to remote employees. A reliable cloud service should be able to handle heavy workloads without downtime or data loss, and should have robust security measures in place to protect against cyber threats critical Devtegrate Cloud DevOps, DevSecOps Services.</p>
+                </div>
+              </div>
+
+              <div class="swiper__slider__header__flex__img_2">
+                <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/devtegrate__4.png" alt="Devtegrate DevOps">
+              </div>
+            </div>
+
+            <div class="swiper__slider__header__flex_2">
+              <div class="swiper__slider__header__flex__content_2">
+                <div class="info__text__header_2">
+                  <span>Our services speaks for us.</span>
+                  <h3>Innovative Assessments.</h3>
+                </div>
+
+                <div class="info__text__content_2">
+                  <p>Innovative assessments can be an effective tool for evaluating proficiency in cloud services and DevOps. By using drawing up innovative and hands-on assessments on various growing cloud DevOps challenges, we seek to provide solutions to these problems and ensure professional satisfactory performance are the end results of our professional services.</p>
+                </div>
+              </div>
+
+              <div class="swiper__slider__header__flex__img_2">
+                <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/devtegrate__8.png" alt="Devtegrate DevOps">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {% include "footer.html" %}
 
@@ -293,6 +377,36 @@
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script src="static/js/main.js"></script>
       <script src="static/js/swiper-bundle.min.js"></script>
+      <script type="text/javascript">
+        // Animation Scroll Section
+        const swiperTwos = document.querySelectorAll(".slider__nav__menu_2");
+        const sliderTwos = document.querySelectorAll(".swiper__slider__header__flex_2");
+        var slideNavTwo = function (manual) {
+          swiperTwos.forEach((swiperTwo) => {
+            swiperTwo.classList.remove("active")
+          });
+
+          sliderTwos.forEach((sliderTwo) => {
+            sliderTwo.classList.remove("active")
+          });
+
+          swiperTwos[manual].classList.add("active");
+          sliderTwos[manual].classList.add("active");
+        }
+
+        // Automatically slide the slides every 3 seconds
+        let currentSlide = 0;
+        setInterval(() => {
+          slideNavTwo(currentSlide);
+          currentSlide = (currentSlide + 1) % swiperTwos.length;
+        }, 2000);
+
+        swiperTwos.forEach((swiperTwo, i) => {
+          swiperTwo.addEventListener("click", () => {
+            slideNavTwo(i);
+          });
+        });
+      </script>
       
     </body>
 </html>
