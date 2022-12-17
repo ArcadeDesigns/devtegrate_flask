@@ -80,11 +80,15 @@
         <!--Slide in Show-->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
         <!-- Link Swiper's CSS -->
         <link href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" rel="stylesheet">
 
         <!-- Style Sheet -->
         <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/animation.css') }}" rel="stylesheet">
     </head>
 
     <body>
@@ -126,7 +130,7 @@
                 <div class="line-footer"></div>
                 <li><a href="{{ url_for('contact') }}"> Contact Us</a></li>
                 <div class="line-footer"></div>
-                <li><a href="{{ url_for('explore') }}"> Our Services</a></li>
+                <li><a href="{{ url_for('services') }}"> Our Services</a></li>
                 <div class="line-footer"></div>
                 <li><a href="{{ url_for('team') }}"> Our Team </a></li>
                 <div class="line-footer"></div>
@@ -170,6 +174,26 @@
       <!--JavaScripts Section-->
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script src="static/js/main.js"></script>
+      <script src="static/js/animation.js"></script>
       <script src="static/js/swiper-bundle.min.js"></script>
+      <script>
+        ScrollReveal({
+          reset: true,
+          distance: '80px',
+          duration: 3000,
+          delay: 600
+        })
+
+        ScrollReveal().reveal('.reveal__header', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.reveal__subheader', { delay: 500, origin: 'right' });
+        ScrollReveal().reveal('.reveal__span', { delay: 700, origin: 'right' });
+        ScrollReveal().reveal('.reveal__image', { delay: 700, origin: 'bottom' });
+        ScrollReveal().reveal('.reveal__image__2', { delay: 700, origin: 'right' });
+        ScrollReveal().reveal('.reveal__box', { delay: 800, origin: 'right' });
+        ScrollReveal().reveal('.reveal__box__2', { delay: 900, origin: 'left' });
+        ScrollReveal().reveal('.reveal__square__box', { delay: 800, origin: 'bottom' });
+        ScrollReveal().reveal('.reveal__boxes', { delay: 400, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.reveal__boxes__social', { delay: 1000, origin: 'left', interval: 200 });
+      </script>
     </body>
   </html>

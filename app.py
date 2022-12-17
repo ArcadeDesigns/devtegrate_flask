@@ -36,6 +36,10 @@ def faq():
 def get_in_touch():
 		return render_template("get-in-touch.html")
 
+@app.route("/explore-our-services")
+def services():
+		return render_template("services.html")
+
 @app.route("/devtegrate-help-center")
 def help_center():
 		return render_template("help_center.html")
