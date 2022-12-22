@@ -396,10 +396,8 @@ html {
     letter-spacing: 1px;
     font-size: 0.7em;
     font-weight: 700;
-    color: var(--primary_color);
-    padding: 5px 30px;
+    color: var(--header_text);
     margin: 2px;
-    background-color: var(--secondary_color);
     border-bottom-right-radius: 100px;
     border-top-left-radius: 100px;
 }
@@ -408,7 +406,7 @@ html {
     padding: 4px;
     font-size: 0.8em;
     font-weight: 700;
-    color: var(--primary_color);
+    color: var(--header_text);
 }
 
 .flex__box__lg__text__content.active{

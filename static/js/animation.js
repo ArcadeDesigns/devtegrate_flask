@@ -78,3 +78,53 @@ for (let i = 0; i < containerElements.length; i++) {
     }
   });
 }
+
+
+
+
+
+const movers = document.querySelectorAll('.animated__links');
+const movings = document.querySelectorAll('.animated__content__container__container');
+
+var moversNav = function (manual) {
+  movers.forEach((mover) => {
+    mover.classList.remove('active');
+  });
+
+  movings.forEach((moving) => {
+    moving.classList.remove('active');
+  });
+
+  movers[manual].classList.add('active');
+  movings[manual].classList.add('active');
+}
+
+movers.forEach((mover, i) => {
+  mover.addEventListener('click', () => {
+    moversNav(i);
+  });
+});
+
+
+
+const servers = document.querySelectorAll('.animaion__fixing__box');
+const servings = document.querySelectorAll('.animaion__fixing__flex__box__container__content');
+
+var serversNav = function (manual) {
+  servers.forEach((server) => {
+    server.classList.remove('active');
+  });
+
+  servings.forEach((serving) => {
+    serving.classList.remove('active');
+  });
+
+  servers[manual].classList.add('active');
+  servings[manual].classList.add('active');
+}
+
+servers.forEach((server, i) => {
+  server.addEventListener('click', () => {
+    serversNav(i);
+  });
+});
