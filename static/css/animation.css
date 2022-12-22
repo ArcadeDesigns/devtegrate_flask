@@ -78,6 +78,11 @@
 	color: var(--primary_color);
 }
 
+.animation__background__grey{
+    background-color: var(--header_color);
+    color: var(--primary_color);
+}
+
 body,
 html {
     overflow-x: hidden;

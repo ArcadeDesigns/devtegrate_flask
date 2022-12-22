@@ -43,7 +43,7 @@ header.shadow {
     left: 0;
     width: 100%;
     z-index: 999;
-    background: var(--header_text);
+    background: var(--header_color);
     transition: 0.4s;
     box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
 }
@@ -1368,7 +1368,7 @@ section{
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: var(--header_text);
+    background-color: var(--header_color);
 }
 
 .next_about_content{
@@ -2882,7 +2882,7 @@ section{
 }
 
 .footer{
-    background-color: var(--header_text);
+    background-color: var(--header_color);
     background-size: cover;
     background-position: center;
     height: auto;
@@ -3083,7 +3083,7 @@ div.line-footer {
     height: auto;
     background-size: cover;
     background-position: center;
-    background-color: var(--header_text);
+    background-color: var(--header_color);
 }
 
 .carousel_box{
@@ -3099,7 +3099,7 @@ div.line-footer {
     margin: 15px 0;
     border-radius: 8px;
     box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-    background-color: var(--text_color);
+    background-color: 0 5px 25px rgb(5 5 5 / 40%);
 }
 
 .carousel_box:hover{
@@ -4160,6 +4160,7 @@ div.line-footer {
 .animaion__fixing__flex__box__container__content p{
     font-size: 0.8em;
     font-weight: 400;
+    color: var(--text_color);
 }
 
 
@@ -4170,7 +4171,7 @@ div.line-footer {
     background-color: var(--secondary_color);
     color: var(--primary_color);
     margin: auto;
-    padding: 3%;
+    padding: 1% 3%;
     width: 100%;
     height: 100%;
     cursor: pointer;
