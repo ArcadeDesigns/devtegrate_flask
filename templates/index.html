@@ -2,43 +2,43 @@
 {% block content %}
 <section class="home">
   <video class="video_slide active" src="https://devtegrate-files.s3.us-east-2.amazonaws.com/videos/video_10.mp4"
-    autoplay muted loop></video>
+    autoplay muted loop ></video>
 
   <div class="content active">
-    <h1 data-aos="zoom-in" data-aos-duration="3000">DevOps &<br><span>Cloud Services</span></h1>
-    <p data-aos="zoom-in" data-aos-duration="3000">
+    <h1 class="reveal__header">DevOps &<br><span>Cloud Services</span></h1>
+    <p class="reveal__box">
       Recent years have presented the world with unprecedented challenges. These same challenges have driven us to craft
       a pattern of development and deployment to keep up with the changing tides of the technological sphere. Ensuring
       smooth and efficient cloud service delivery.
     </p>
-    <a data-aos="zoom-in" data-aos-duration="3000" href="{{url_for('explore')}}">Explore</a>
+    <a class="reveal__span" href="{{url_for('explore')}}">Explore</a>
 
-    <div data-aos="zoom-in" data-aos-duration="3000" class="explore_container_header">
+    <div class="explore_container_header reveal__span">
       <span style="font-size: 0.8em; padding: 10px 0 0 0; ">Our expert service and satisfied clients.</span>
     </div>
 
-    <div data-aos="zoom-in" data-aos-duration="3000" class="header_image_client">
-      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/nba.png" alt="Devtegrate DevOps">
-      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/disney.png" alt="Devtegrate DevOps">
-      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/autostore.png" alt="Devtegrate DevOps">
-      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/microsoft.png" alt="Devtegrate DevOps">
-      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/aws.png" alt="Devtegrate DevOps">
-      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/hardrock.png" alt="Devtegrate DevOps">
+    <div class="header_image_client">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/nba.png" alt="Devtegrate DevOps" class="reveal__boxes">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/disney.png" alt="Devtegrate DevOps" class="reveal__boxes">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/autostore.png" alt="Devtegrate DevOps" class="reveal__boxes">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/microsoft.png" alt="Devtegrate DevOps" class="reveal__boxes">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/aws.png" alt="Devtegrate DevOps" class="reveal__boxes">
+      <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/hardrock.png" alt="Devtegrate DevOps" class="reveal__boxes">
     </div>
   </div>
 
   <div class="media_icons">
-    <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.facebook.com/profile.php?id=100087533002431"><i
+    <a class="reveal__boxes__social__right" href="https://www.facebook.com/profile.php?id=100087533002431"><i
         class="bx bxl-facebook"></i></a>
 
-    <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.instagram.com/devtegrate_llc"><i
+    <a class="reveal__boxes__social__right" href="https://www.instagram.com/devtegrate_llc"><i
         class="bx bxl-instagram"></i></a>
 
-    <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.twitter.com/Devtegrate_LLC"><i
+    <a class="reveal__boxes__social__right" href="https://www.twitter.com/Devtegrate_LLC"><i
         class="bx bxl-twitter"></i></a>
   </div>
 
-  <div data-aos="zoom-in" data-aos-duration="3000" class="slider_navigation">
+  <div class="slider_navigation reveal__box">
     <a class="nav_arrow" href=""><i style="color: #35A6FF" class='bx bx-chevrons-left'></i></a>
     <a class="nav_btn active" href=""></a>
     <a class="nav_text" href="{{ url_for ('team') }}">Next Page</a>
@@ -48,10 +48,10 @@
 </section>
 
 <div class="introduction">
-  <div data-aos="zoom-in" data-aos-duration="3000" class="introduction_content">
+  <div class="introduction_content ">
     <div class="row">
       <div class="col-md-6">
-        <div class="introduction_img">
+        <div class="introduction_img reveal__image__2">
           <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/devtegrate_image.jpg"
             alt="Devtegrate DevOps">
         </div>
@@ -59,11 +59,11 @@
 
       <div class="col-md-6">
         <div class="section_title">
-          <h2>Devtegrate cloud services, we automate</h2>
+          <h2 class="reveal__header">Devtegrate cloud services, we automate</h2>
         </div>
 
         <div class="row">
-          <div data-aos="zoom-in-left" data-aos-duration="3000" class="col-md-6">
+          <div class="col-md-6 reveal__boxes">
             <div class="introduction_box">
               <i class='bx bx-water'></i>
               <div class="introduction_box_flex">
@@ -73,7 +73,7 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in-right" data-aos-duration="3000" class="col-md-6">
+          <div class="col-md-6 reveal__boxes">
             <div class="introduction_box">
               <i class='bx bxl-aws' style='color:#f1c109'></i>
               <div class="introduction_box_flex">
@@ -83,7 +83,7 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in-left" data-aos-duration="3000" class="col-md-6">
+          <div class="col-md-6 reveal__boxes">
             <div class="introduction_box">
               <i class='bx bxs-conversation' style='color:#288e0e'></i>
               <div class="introduction_box_flex">
@@ -93,7 +93,7 @@
             </div>
           </div>
 
-          <div data-aos="zoom-in-right" data-aos-duration="3000" class="col-md-6">
+          <div class="col-md-6 reveal__boxes">
             <div class="introduction_box">
               <i class='bx bx-cloud' style='color:#4ae4b5'></i>
               <div class="introduction_box_flex">
@@ -118,7 +118,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="animated__landing__page">
   <div class="animated__landing__page__flex__box">
