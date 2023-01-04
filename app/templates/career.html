@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+	{% block content %}
+		<div class="header_section_md_2">
+			<div class="header_content_md_2">
+				<h3>Devtegrate Career</h3>
+				<p>Career&nbsp;&nbsp;<i class='bx bxs-chevrons-right bx-fade-right'></i>&nbsp;&nbsp;Opportunities</p>
+			</div>
+		</div>
+
+		<section class="explore_container">
+			<div data-aos="zoom-in" data-aos-duration="3000" class="explore_container_header">
+		      <span>DevOps.&nbsp;&nbsp;&nbsp;&nbsp;Cloud Service.&nbsp;&nbsp;&nbsp;&nbsp;Automation.</span>
+		      <h2>Welcome to Devtegrate career oppurtunities</h2>
+		    </div>
+
+		    <div class="explore_flex_container_md_4">
+		      <div data-aos="zoom-in" data-aos-duration="3000" class="explore_flex_box_md_4">
+		        <i class='bx bx-cloud'></i>
+		        <h3>Devtegrate DevOps Cloud Service</h3>
+		        <span>Devtegrate is constantly searching for new talents and great minds in various areas of programming in a bid to develop and grow, keeping pace with the fast-growing Technological evolution.</span>
+		      </div>
+		      <div data-aos="zoom-in" data-aos-duration="3000" class="explore_flex_box_md_4">
+		        <i class='bx bx-mail-send'></i>
+		        <h3>Search and Apply</h3>
+		        <span>Kindly search through the openings below and apply to get started on the career path you have chosen. Please ensure you meet all requirements and fill in all the necessary information’s before sending in your application.</span>
+		      </div>
+		    </div>
+		</section>
+
+		<section class="help_center_container">
+			<div class="title">
+				<h2 data-aos="zoom-out" data-aos-duration="3000">Available Positions</h2>
+				<p data-aos="zoom-out" data-aos-duration="3000">Begin a professional career with Devtegrate and move up to success.</p>
+			</div>
+
+			<div class="layout">
+				<div class="accordion">
+					<div class="accordion__question">
+						<p>
+							Are we recruiting?
+							<i class="bx bx-plus"></i>
+						</p>
+						<hr>
+					</div>
+
+					<div class="accordion__answer">
+						<p>
+							Sorry there are no Vacancies presently.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script type="text/javascript">
+			let answers=document.querySelectorAll('.accordion');
+			answers.forEach((event)=>{
+				event.addEventListener('click',()=>{
+					if(event.classList.contains('active')){
+						event.classList.remove('active');
+					}
+
+					else{
+						event.classList.add('active');
+					}
+				})
+			});
+		</script>
+	{% endblock %}

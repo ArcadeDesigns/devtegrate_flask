@@ -1,0 +1,153 @@
+{% extends 'base.html' %} 
+  {% block content %}
+    <section class="home">
+      <video class="video_slide active" src="https://devtegrate-files.s3.us-east-2.amazonaws.com/videos/video_11.mp4" autoplay muted loop></video>
+
+      <div class="content active" data-aos="zoom-in" data-aos-duration="3000">
+        <h1 data-aos="zoom-in" data-aos-duration="3000">Meet.<br><span>The Team</span></h1>
+        <p data-aos="zoom-in" data-aos-duration="3000">Made up of a strong team of multinationals and expert programmers, expert devops engineers ready to develop, deploy, and automate.</p>
+      </div>
+
+      <div class="media_icons">
+        <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.facebook.com/profile.php?id=100087533002431"><i class="bx bxl-facebook"></i></a>
+        <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.instagram.com/devtegrate_llc"><i class="bx bxl-instagram"></i></a>
+        <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.twitter.com/Devtegrate_LLC"><i class="bx bxl-twitter"></i></a>
+      </div>
+
+      <div data-aos="zoom-in" data-aos-duration="3000" class="slider_navigation">
+        <a class="nav_arrow" href=" {{ url_for('index') }} "><i style="color: #35A6FF" class='bx bx-chevrons-left bx-flashing'></i></a>
+        <a class="nav_text" href="{{ url_for('index') }}">Previous Page</a>
+        <a class="nav_btn active" href=""></a>
+        <a class="nav_text" href="{{ url_for ('get_in_touch') }}">Next Page</a>
+        <a class="nav_arrow" href="{{ url_for ('get_in_touch') }}"><i style="color: #ffffff"
+            class='bx bx-chevrons-right bx-flashing'></i></a>
+      </div>
+    </section>
+
+    <div class="animation__team__page__container">
+      <div data-aos="fade-in" data-aos-duration="3000" class="animation__team__page__container__header">
+        <h2>Our team of professionals and certified experts.</h2>
+        <p>Leaders in Innovation And Technology.</p>
+      </div>
+
+      <div class="animation__team__page__container__content">
+        <div class="animation__team__page__container__flex__box">
+          <div data-aos="fade-in" data-aos-duration="3000" class="animation__team__page__container__flex__box__text">
+            <span>Development.&nbsp;&nbsp;&nbsp;&nbsp;Integration.&nbsp;&nbsp;&nbsp;&nbsp;Devtegration.</span>
+            <h3>Our Core Cloud Service Offerings.</h3>
+            <p>Devtegrate is a cloud service provider that has a team of professionals and certified experts in various cloud services and platforms. Our team consists of experienced professionals who have a deep understanding of cloud technologies and how to implement them effectively for businesses. They have a track record of delivering successful cloud projects for businesses of all sizes, across a range of industries.</p>
+            <p>The Devtegrate team is certified in a variety of cloud platforms, including Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform. This allows them to offer expert guidance and support to businesses using these platforms, as well as provide recommendations on the best platform to use based on the specific needs and goals of the business. In addition to their expertise in these platforms, the Devtegrate team is also skilled in a range of cloud services, including infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS). This enables them to provide comprehensive cloud solutions that meet the needs of businesses of all sizes.</p>
+          </div>
+          <div class="animation__team__page__container__flex__box__img">
+            <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/explore__2.jpg" alt="Devtegrate DevOps">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="animation__team__page__container__2">
+      <div class="animation__background__sizing__2 animation__background__black">
+        <div class="animation__header">
+          <h3>What we promise our Clients at Devtegrate</h3>
+          <p>Devtegrate has one of the most effective and efficient work force as a cloud service provider with professional service rendering a major focus.</p>
+        </div>
+        <div class="animation__flex__box">
+          <div class="animation__flex__box__container">
+            <li>90%</li>
+            <p>Our Language Stack</p>
+          </div>
+
+          <div class="animation__flex__box__container">
+            <li>96%</li>
+            <p>Our Professional Ratings</p>
+          </div>
+
+          <div class="animation__flex__box__container">
+            <li>100%</li>
+            <p>Our Service Focus</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- team_section; team_img; team_img img-->
+    <div class="team_container">
+      <div data-aos="zoom-in" data-aos-duration="3000" class="team_container_header">
+        <span>Development.&nbsp;&nbsp;&nbsp;&nbsp;Integration.&nbsp;&nbsp;&nbsp;&nbsp;Devtegration.</span>
+        <h2>Our team is made up of individuals from various language stack ready to provide effective service delivery.</h2>
+      </div>
+
+      <div class="team_sub_container">
+        <div class="team_sub_container_flex">
+          <div data-aos="zoom-in" data-aos-duration="3000" class="team_container_img">
+            <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/13.png" alt="Devtegrate DevOps">
+          </div>
+
+          <div class="team_container_content">
+            <div class="team_container_make_up">
+              <div data-aos="fade-in" data-aos-duration="3000" class="team_container_make_up_flex">
+                <i class='bx bxl-dev-to'></i>
+
+                <div class="team_container_stack">
+                  <h3>The Devtegrate Stack</h3>
+                  <p>The Devtegrate team is made up of a complex and reliable crop of expert programmers and developers with the aim to make clients satisfaction a major guarantee.
+                  </p>
+                  <span>Summary of Our Stack.</span>
+
+                  <div class="team_container_grid">
+                    <i class='bx bxl-javascript'></i>
+                    <i class='bx bxl-python'></i>
+                    <i class='bx bxl-docker'></i>
+                    <i class='bx bx-data'></i>
+                    <i class='bx bxl-postgresql'></i>
+                    <i class='bx bxl-mongodb'></i>
+                    <i class='bx bxl-gitlab'></i>
+                    <i class='bx bxl-nodejs'></i>
+                    <i class='bx bxl-aws'></i>
+                    <i class='bx bxl-google-cloud'></i>
+                    <i class='bx bxl-microsoft'></i>
+                    <i class='bx bxl-kubernetes'></i>
+                    <i class='bx bxl-django'></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team_btn_sectiion">
+          <div class="explore_btn">
+            <button data-aos="fade-in" data-aos-duration="2000"><a href="{{url_for('about')}}">Know More About Us</a></button>
+          </div>
+
+          <div class="explore_btn">
+            <button data-aos="fade-in" data-aos-duration="2000"><a href="{{url_for('contact')}}">Talk to Us</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  too many words 
+  on wordflow management
+  strenched background image

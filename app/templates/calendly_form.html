@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+
+	<div class="calendly_form">
+	    <div class="calendly_form_flex">
+	      <div class="calendly_form_content">
+	        <div class="calendly_form_header">
+	          <span>Development.&nbsp;&nbsp;&nbsp;&nbsp;Integration.&nbsp;&nbsp;&nbsp;&nbsp;Devtegrate.</span>
+	          <h3 style='color:#35A6FF'>Consult with Us</h3>
+	        </div>
+	        <form method="POST" onsubmit="sendEmail(); reset(); return false">
+	          <input type="text" name='name' placeholder="What is your Name">
+	          <input type="text" name='company' placeholder="Company's Name">
+	          <input type="email" name='address' placeholder="Email Address Here !">
+
+	          <textarea id='message' placeholder="How can we help you?" required></textarea>
+	          <button type='submit'>Send <i class="bx bxl-telegram"></i></button>
+	        </form>
+	      </div>
+
+	      <div class="calendly_form_content_md_2">
+	        <!-- Calendly inline widget begin -->
+	        <div class="calendly-inline-widget" data-url="https://calendly.com/devtegrate/devtegrate-consult"
+	          style="min-width:320px;height:630px;"></div>
+	        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+	        <!-- Calendly inline widget end -->
+	      </div>
+	    </div>
+	  </div>
+
+	  <script>
+	    function sendEmail() {
+	      Email.send({
+	        Host: "smtp.office365.com",
+	        Username: "contact@devtegrate.com",
+	        Password: "Welcome2022@@eva",
+	        To: "michael@devtegrate.com",
+	        From: document.getElementById("email").value,
+	        Subject: 'You Have a New Schelduled Conference',
+	        Body:
+	          'Name:' +
+	          document.getElementById('name').value +
+	          '<br> Company:' +
+	          document.getElementById('company').value +
+	          '<br> Email:' +
+	          document.getElementById('address').value +
+	          "<br> Message:" +
+	          document.getElementById('message').value,
+	      }).then((message) => alert('Message Successfully Sent'));
+	    }
+	  </script>
+	  
+{% endblock %}
