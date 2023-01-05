@@ -49,7 +49,7 @@
         <meta name="author" content="Devtegrate | Ebire Folayemi Michael " />
         <meta
           name="revised"
-          content="Devtegrate, 5th of October, 2022"
+          content="Devtegrate, 5th of January, 2023"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -77,8 +77,8 @@
           rel="stylesheet"
         />
 
-        <!--Slide in Show-->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
         <!-- Link Swiper's CSS -->
         <link href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" rel="stylesheet">
@@ -94,31 +94,31 @@
         <video class="video_slide active" src="https://devtegrate-files.s3.us-east-2.amazonaws.com/videos/video_2.mp4" autoplay muted loop></video>
         
         <div class="content active">
-          <h1 data-aos="zoom-in" data-aos-duration="3000">Devtegrate Cloud Expert.<br><span>Software Life Cycle</span></h1>
-          <p data-aos="zoom-in" data-aos-duration="3000">
+          <h1 class="reveal__header">Devtegrate.<br><span>Cloud Expert</span></h1>
+          <p class="reveal__box">
             Expert Cloud services are rear, but at Devtegrate, we have a team made up of professional DevOps engineers and SRE experts ready to attend to you at your request. Learn more on how we integrate to your applications and virtual environments here.
           </p>
         </div>
         <div class="media_icons">
-          <div class="media_icons">
-            <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.facebook.com/profile.php?id=100087533002431"><i class="bx bxl-facebook"></i></a>
-            <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.instagram.com/devtegrate_llc"><i class="bx bxl-instagram"></i></a>
-            <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.twitter.com/Devtegrate_LLC"><i class="bx bxl-twitter"></i></a>
-          </div>
+          <a class="reveal__boxes__social__right" href="https://www.facebook.com/profile.php?id=100087533002431"><i
+              class="bx bxl-facebook"></i></a>
+          <a class="reveal__boxes__social__right" href="https://www.instagram.com/devtegrate_llc"><i
+              class="bx bxl-instagram"></i></a>
+          <a class="reveal__boxes__social__right" href="https://www.twitter.com/Devtegrate_LLC"><i
+              class="bx bxl-twitter"></i></a>
         </div>
       </section>
 
       <div class="integration_container">
         <div class="integration_container_flex">
-          <div data-aos="zoom-in" data-aos-duration="3000" class="integration_img">
+          <div class="integration_img reveal__image">
             <img src="https://devtegrate-files.s3.us-east-2.amazonaws.com/images/devtegrate_image_6.jpg" alt="Devtegrate DevOps">
           </div>
 
           <div class="integration_content">
-            <span data-aos="zoom-in"
-              data-aos-duration="3000">Development.&nbsp;&nbsp;&nbsp;&nbsp;Integration.&nbsp;&nbsp;&nbsp;&nbsp;Devtegrate.
-            </span>
-            <h2 data-aos="zoom-in" data-aos-duration="3000">DEVELOPMENT, INTEGRATION AND DEVOPS; CORE DEVTEGRATE SERVICES</h2>
+            <span class="reveal__span">Development.&nbsp;&nbsp;&nbsp;&nbsp;Integration.&nbsp;&nbsp;&nbsp;&nbsp;Devtegrate.</span>
+            <h2 class="reveal__header">Development Itegration and DevOps; Core Devtegrate Service.</h2>
+
             <p>Development in DevOps (Development Operations) is majorly focused on the delivery pipeline to “build, test and release” on one part and then “plan and monitor” on the other end. This process is meant to increase the ability of organizations to deliver applications and services more effectively and efficiently, with the utilization of various tools for integration.</p>
 
             <p>Integration on the other hand, is a viral DevOps Software Development practice where developers merge their codes and changes into a central repository. As a result, multiple developers can work seamlessly on a single project divided into various sections at the same time. Basically the Development process leads the way and encourages integration into the system, the aim is to “build, test, release, plan and monitor”. This process however requires a depth of knowledge about Cloud Computing, Cloud servers and Services, and the process of integration into various environments (On Premise Cloud Infrastructure).</p>
@@ -407,6 +407,26 @@
           });
         });
       </script>
-      
+
+      <script>
+        ScrollReveal({
+          reset: true,
+          distance: '80px',
+          duration: 3000,
+          delay: 600
+        })
+
+        ScrollReveal().reveal('.reveal__header', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.reveal__subheader', { delay: 500, origin: 'right' });
+        ScrollReveal().reveal('.reveal__span', { delay: 700, origin: 'right' });
+        ScrollReveal().reveal('.reveal__image', { delay: 700, origin: 'bottom' });
+        ScrollReveal().reveal('.reveal__image__2', { delay: 700, origin: 'right' });
+        ScrollReveal().reveal('.reveal__box', { delay: 800, origin: 'right' });
+        ScrollReveal().reveal('.reveal__box__2', { delay: 900, origin: 'left' });
+        ScrollReveal().reveal('.reveal__square__box', { delay: 800, origin: 'bottom' });
+        ScrollReveal().reveal('.reveal__boxes', { delay: 400, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.reveal__boxes__social', { delay: 1000, origin: 'left', interval: 200 });
+        ScrollReveal().reveal('.reveal__boxes__social__right', { delay: 1000, origin: 'right', interval: 200 });
+      </script>
     </body>
 </html>

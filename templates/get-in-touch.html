@@ -5,12 +5,12 @@
     <video class="video_slide active" src="https://devtegrate-files.s3.us-east-2.amazonaws.com/videos/video_12.mp4" autoplay muted loop></video>
 
     <div class="content active">
-      <h1 data-aos="zoom-in" data-aos-duration="3000">Get In.<br><span>Touch</span></h1>
-      <p data-aos="zoom-in" data-aos-duration="3000">With a combined Cloud DevOps experience of over fifty years (50 yrs) made up of a strong team of multinationals, having an understanding of various clients on a global scale. Devtegrate prides itself in the provision of satisfactory professional service, with a well established record.</p>
+      <h1 class="reveal__header">Get In.<br><span>Touch</span></h1>
+      <p class="reveal__box">With a combined Cloud DevOps experience of over fifty years (50 yrs) made up of a strong team of multinationals, having an understanding of various clients on a global scale. Devtegrate prides itself in the provision of satisfactory professional service, with a well established record.</p>
 
-      <div class="subscription_section" data-aos="zoom-in" data-aos-duration="3000">
-        <h2>Lets contact you via Email</h2>
-        <p>Get up to date news, Information and upcoming events from Dev<span>te</span>grate</p>
+      <div class="subscription_section">
+        <h2 class="reveal__header">Lets contact you via Email</h2>
+        <p class="reveal__box">Get up to date news, Information and upcoming events from Dev<span>te</span>grate</p>
         <div class="col-md-12">
           <div class="subscription_input">
             <form action=" {{ url_for('contact') }} ">
@@ -23,12 +23,15 @@
     </div>
 
     <div class="media_icons">
-      <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.facebook.com/profile.php?id=100087533002431"><i class="bx bxl-facebook"></i></a>
-      <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.instagram.com/devtegrate_llc"><i class="bx bxl-instagram"></i></a>
-      <a data-aos="zoom-in" data-aos-duration="3000" href="https://www.twitter.com/Devtegrate_LLC"><i class="bx bxl-twitter"></i></a>
-    </div>
+    <a class="reveal__boxes__social__right" href="https://www.facebook.com/profile.php?id=100087533002431"><i
+        class="bx bxl-facebook"></i></a>
+    <a class="reveal__boxes__social__right" href="https://www.instagram.com/devtegrate_llc"><i
+        class="bx bxl-instagram"></i></a>
+    <a class="reveal__boxes__social__right" href="https://www.twitter.com/Devtegrate_LLC"><i
+        class="bx bxl-twitter"></i></a>
+  </div>
 
-    <div data-aos="zoom-in" data-aos-duration="3000" class="slider_navigation">
+    <div class="slider_navigation">
       <a class="nav_arrow" href="{{ url_for('team') }}"><i style="color: #35A6FF" class='bx bx-chevrons-left'></i></a>
       <a class="nav_text" href="{{ url_for('team') }}">Previous Page</a>
       <a class="nav_btn active" href=""></a>
