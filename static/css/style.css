@@ -5147,7 +5147,7 @@ div.line-footer {
 .blog__section__container{
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 4% 0;
     padding: 5% 0;
 }
 
@@ -5171,10 +5171,14 @@ div.line-footer {
 }
 
 .blog__section__container__flex{
+    display: none;
+}
+
+.blog__section__container__flex.active{
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 5%;
+    padding: 2% 5%;
     display: flex;
     flex-direction: row;
 }
@@ -5182,14 +5186,14 @@ div.line-footer {
 .blog__section__container__flex__box{
     justify-content: center;
     align-items: center;
-    margin: 2%;    
+    margin: 0 2%;    
     flex: 1;
     height: 200px;
+    border-bottom: 3px solid #35A6FF;
     background-color: #e8e8e8;
-}
-
-.blog__section__container__flex__box:hover{
     border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .blog__section__container__flex__box__images{
@@ -5259,6 +5263,36 @@ div.line-footer {
     text-decoration: none;
 }
 
+.blog__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transform: translateY(80px);
+}
+
+.blog__nav .nav__btn.active {
+    background: var(--secondary_color);
+}
+
+.blog__nav .nav__btn {
+    width: 12px;
+    height: 12px;
+    background: var(--section_color);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.blog__nav .nav__btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.blog__nav .nav__btn:hover {
+    transform: scale(1.2);
+}
 @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 1040px) {
     header {
         padding: 15px 20px;
@@ -5811,6 +5845,19 @@ div.line-footer {
         padding: 6.2% 0;
         background-color: #333333;
         margin: 0 0 1% 0;
+    }
+
+    .blog__section__container__flex__box{
+        margin: 2%;    
+    }
+
+    .blog__section__container__flex.active{
+        flex-direction: column;
+        flex: 3;
+    }
+
+    .blog__nav{
+        display: none;
     }
 
     .team_sub_container_flex {
